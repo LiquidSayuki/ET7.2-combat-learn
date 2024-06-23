@@ -18,6 +18,8 @@ namespace ET.Server
             Root.Instance.Scene.AddComponent<RobotCaseComponent>();
 
             Root.Instance.Scene.AddComponent<NavmeshComponent>();
+            // 技能效果分发组件
+            Root.Instance.Scene.AddComponent<ActionsDispatcherComponent>();
 
             StartProcessConfig processConfig = StartProcessConfigCategory.Instance.Get(Options.Instance.Process);
             switch (Options.Instance.AppType)

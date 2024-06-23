@@ -1,6 +1,9 @@
-﻿namespace ET.Server;
-
-public class CastComponent
+﻿namespace ET.Server
 {
+    [ComponentOf(typeof(Unit))]
+    public class CastComponent : Entity, IAwake, IDestroy
+    {
     
+    }
 }
+

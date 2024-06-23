@@ -235,3 +235,76 @@ message G2C_Benchmark // IResponse
 	int32 Error = 2;
 	string Message = 3;
 }
+
+// Cast开始
+message M2C_CastStart  //IActorMessage
+{
+	int64 SceneId = 80;
+
+	int64 CastId = 1;
+	int64 CastConfigId = 2;
+	int64 CasterId = 3;
+	repeated int64 TargetId = 4;
+}
+
+// Cast命中
+message M2C_CastHit // IActorMessage
+{
+	int64 SceneId = 80;
+
+	int64 CastId = 1;
+	repeated int64 TargetId = 2;
+	int64 CasterId = 3;
+}
+
+// Cast结束
+message M2C_CastFinish // IActorMessage
+{
+	int64 SceneId = 80;
+
+	int64 CastId = 1;
+	int64 CasterId = 2;
+}
+
+// Cast打断
+message M2C_CastBreak // IActorMessage
+{
+	int64 SceneId = 80;
+
+	int64 CastId = 1;
+	int64 CasterId = 2;
+}
+
+// Buff消息
+message BuffProto
+{
+	int64 Id = 1;
+	int32 ConfigId = 2;
+	int64 ExpireTime  = 3;
+	int64 CreateTime = 4;
+	byte[] ExtraData = 5;
+}
+
+message M2C_BuffAdd // IActorMessage
+{
+	int64 UnitId = 1;
+	BuffProto BuffData = 2;
+}
+
+message M2C_BuffTick // IActorMessage
+{
+	int64 UnitId = 1;
+	int64 BuffId = 2;
+}
+
+message M2C_BuffUpdate // IActorMessage
+{
+	int64 UnitId = 1;
+	BuffProto BuffData = 2;
+}
+
+message M2C_BuffRemove // IActorMessage
+{
+	int64 UnitId = 1;
+	int64 BuffId = 2;
+}
