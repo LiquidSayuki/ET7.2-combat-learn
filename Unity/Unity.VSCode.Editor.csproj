@@ -44,8 +44,8 @@
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\VSCodeDiscovery.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\StringUtils.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\GUIDGenerator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\AssemblyNameProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\ProjectGeneration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\AssemblyNameProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\FileIO.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\ProjectGeneration\ProjectGenerationFlag.cs" />
     <Compile Include="Library\PackageCache\com.unity.ide.vscode@1.2.5\Editor\VSCodeScriptEditor.cs" />
@@ -317,17 +317,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\SharpCompress.dll</HintPath>
@@ -352,6 +349,9 @@
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>F:\Unity\ET\Unity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

@@ -87,6 +87,8 @@ namespace ET.Server
         {
             if (!self.ActorMessageHandlers.ContainsKey(type))
             {
+                //Log.Debug($"Message Register {type}");
+                
                 self.ActorMessageHandlers.Add(type, new List<ActorMessageDispatcherInfo>());
             }
 

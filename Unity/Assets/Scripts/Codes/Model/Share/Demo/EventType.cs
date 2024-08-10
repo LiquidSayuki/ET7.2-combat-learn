@@ -33,6 +33,7 @@
         public struct AfterUnitCreate
         {
             public Unit Unit;
+            public bool isPlayer;
         }
     }
 }

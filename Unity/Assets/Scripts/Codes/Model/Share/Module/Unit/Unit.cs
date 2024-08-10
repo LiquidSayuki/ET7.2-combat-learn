@@ -26,6 +26,7 @@ namespace ET
             {
                 float3 oldPos = this.position;
                 this.position = value;
+                
                 EventSystem.Instance.Publish(this.DomainScene(), new EventType.ChangePosition() { Unit = this, OldPos = oldPos });
             }
         }

@@ -297,14 +297,57 @@ message M2C_BuffTick // IActorMessage
 	int64 BuffId = 2;
 }
 
+// Buff更新
 message M2C_BuffUpdate // IActorMessage
 {
 	int64 UnitId = 1;
 	BuffProto BuffData = 2;
 }
 
+// Buff移除
 message M2C_BuffRemove // IActorMessage
 {
 	int64 UnitId = 1;
 	int64 BuffId = 2;
+}
+
+message M2C_BattleResult // IActorMessage
+{
+	int64 AttackerId = 1;
+	int64 TargetId = 2;
+	int64 Damage = 3;
+}
+
+//ResponseType M2C_TestCast
+message C2M_TestCast //IActorLocationRequest
+{
+	int32 RpcId = 90;
+	int32 CastConfigId = 1;
+}
+
+message M2C_TestCast //IActorLocationResponse
+{
+	int32 RpcId = 90;
+	int32 Error = 91;
+	string Message = 92;
+}
+
+message M2C_CoolDownChange //IActorMessage
+{
+	repeated int32 CastConfigIds = 1;
+	repeated int64 CoolDownTimes = 2;
+	repeated int64 CoolDownStartTimes = 3;
+}
+
+message M2C_SetPosition //IActorMessage
+{
+	int64 UnitId = 1;
+	Unity.Mathematics.float3 Position = 2;
+	Unity.Mathematics.quaternion Rotation = 3;
+}
+
+message M2C_NumericChange //IActorMessage
+{
+	int64 UnitId = 1;
+	map<int32,int64> KV = 2;
 }

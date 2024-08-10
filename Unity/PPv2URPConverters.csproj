@@ -41,14 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\GrainConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\ChromaticAberrationConverter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\BloomConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\ColorGradingConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\PostProcessEffectSettingsConverter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\GrainConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\VignetteConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\PPv2Converter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\ChromaticAberrationConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\DepthOfFieldConverter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\BloomConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\LensDistortionConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\PropertyConversions.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Converter\PPv2\EffectConverters\MotionBlurConverter.cs" />
@@ -321,17 +321,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\SharpCompress.dll</HintPath>
@@ -356,6 +353,9 @@
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>F:\Unity\ET\Unity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

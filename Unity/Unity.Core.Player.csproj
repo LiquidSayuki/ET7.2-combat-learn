@@ -42,80 +42,94 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Core\MultiMapSet.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\WinPeriod.cs" />
     <Compile Include="Assets\Scripts\Core\UnOrderMultiMap.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ILoadSystem.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ComponentView.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Synchronization\MainThreadSynchronizationContext.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\IDeserializeSystem.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\NetworkHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\DoubleMap.cs" />
     <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockQueueType.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\ProcessHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IAddComponentSystem.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\IGetComponentSystem.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\Circularbuffer.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Config\ConfigComponent.cs" />
     <Compile Include="Assets\Scripts\Core\Module\IdGenerater\IdGenerater.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Entity\EntitySceneFactory.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ISerializeToEntity.cs" />
     <Compile Include="Assets\Scripts\Core\Helper\EnumHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ObjectSystemAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\ListComponent.cs" />
-    <Compile Include="Assets\Scripts\Core\UnOrderMultiMapSet.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IEvent.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\OpcodeRangeDefine.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\InstanceQueueIndex.cs" />
     <Compile Include="Assets\Scripts\Core\Method\IStaticMethod.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Config\ConfigSingleton.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Log\Logger.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\AChannel.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\IAwakeSystem.cs" />
     <Compile Include="Assets\Scripts\Core\Singleton\Singleton.cs" />
     <Compile Include="Assets\Scripts\Core\HashSetComponent.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\FileHelper.cs" />
     <Compile Include="Assets\Scripts\Core\ThreadSynchronizationContext.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\RandomGenerator.cs" />
     <Compile Include="Assets\Scripts\Core\Singleton\ISingletonAwake.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockType.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Timer\ATimer.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\RpcException.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\NetServices.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ITransfer.cs" />
-    <Compile Include="Assets\Scripts\Core\Serialize\SerializeHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Analyzer\UniqueIdAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Object\ProtoObject.cs" />
     <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\WaitCoroutineLock.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\WChannel.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockQueue.cs" />
     <Compile Include="Assets\Scripts\Core\Helper\ByteHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Log\Log.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ILateUpdateSystem.cs" />
     <Compile Include="Assets\Scripts\Core\TimerCoreInvokeType.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\InvokeAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Singleton\ISingletonLateUpdate.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Options\Options.cs" />
-    <Compile Include="Assets\Scripts\Core\MultiDictionary.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\KChannel.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\EventAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Method\StaticMethod.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\TChannel.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\PacketParser.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\ZipHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Singleton\ISingletonUpdate.cs" />
+    <Compile Include="Assets\Scripts\Core\Object\DisposeObject.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\MD5Helper.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\AService.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\ObjectHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Object\Object.cs" />
+    <Compile Include="Assets\Scripts\Core\Analyzer\StaticFieldAttribute.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\KService.cs" />
+    <Compile Include="Assets\Scripts\Core\Analyzer\FriendOfAttribute.cs" />
+    <Compile Include="Assets\Scripts\Core\Analyzer\EnableMethodAttribute.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Timer\TimerComponent.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Time\TimeInfo.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Config\IMerge.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\WService.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\AssemblyHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Serialize\MongoHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IInvoke.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IUpdateSystem.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Log\NLogger.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ISystemType.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\WinPeriod.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ILoadSystem.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ComponentView.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\NetworkHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\DoubleMap.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\ProcessHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IAddComponentSystem.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\Circularbuffer.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ISerializeToEntity.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ObjectSystemAttribute.cs" />
+    <Compile Include="Assets\Scripts\Core\UnOrderMultiMapSet.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IEvent.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\InstanceQueueIndex.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Config\ConfigSingleton.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\AChannel.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\FileHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Helper\RandomGenerator.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockType.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\NetServices.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ITransfer.cs" />
+    <Compile Include="Assets\Scripts\Core\Serialize\SerializeHelper.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockQueue.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Log\Log.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ILateUpdateSystem.cs" />
+    <Compile Include="Assets\Scripts\Core\MultiDictionary.cs" />
+    <Compile Include="Assets\Scripts\Core\Module\Network\KChannel.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Entity\Root.cs" />
     <Compile Include="Assets\Scripts\Core\Serialize\ProtobufHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Entity\SceneHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\TChannel.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\PacketParser.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Log\ILog.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\ZipHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Analyzer\ComponentOfAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Singleton\ISingletonUpdate.cs" />
-    <Compile Include="Assets\Scripts\Core\Object\DisposeObject.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\EventSystem.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\MD5Helper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\AService.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Entity\Entity.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\ObjectHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Helper\ETCancelationTokenHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Object\Object.cs" />
     <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLockComponent.cs" />
     <Compile Include="Assets\Scripts\Core\Serialize\JsonHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\TService.cs" />
@@ -123,238 +137,224 @@
     <Compile Include="Assets\Scripts\Core\Module\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Time\TimeHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\BaseAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Analyzer\StaticFieldAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Analyzer\ChildOfAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\KService.cs" />
     <Compile Include="Assets\Scripts\Core\Module\EventSystem\IDestroySystem.cs" />
-    <Compile Include="Assets\Scripts\Core\Analyzer\FriendOfAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Analyzer\EnableMethodAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Timer\TimerComponent.cs" />
     <Compile Include="Assets\Scripts\Core\Analyzer\EnableAccessEntiyChildAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Entity\SceneType.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Time\TimeInfo.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Config\IMerge.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Config\ConfigAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Network\WService.cs" />
     <Compile Include="Assets\Scripts\Core\Module\CoroutineLock\CoroutineLock.cs" />
-    <Compile Include="Assets\Scripts\Core\Helper\AssemblyHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Serialize\MongoHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IInvoke.cs" />
     <Compile Include="Assets\Scripts\Core\MultiMap.cs" />
     <Compile Include="Assets\Scripts\Core\Helper\StringHashHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Singleton\Game.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\IUpdateSystem.cs" />
     <Compile Include="Assets\Scripts\Core\Helper\StringHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Analyzer\EnableClassAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\Log\NLogger.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Config\IConfig.cs" />
-    <Compile Include="Assets\Scripts\Core\Module\EventSystem\ISystemType.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\MessageAttribute.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\MessageSerializeHelper.cs" />
     <Compile Include="Assets\Scripts\Core\Module\Network\ErrorCore.cs" />
+    <Reference Include="UnityEngine">
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AIModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClothModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.GIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.GridModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.GridModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ImageConversionModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TLSModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreFontEngineModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreTextEngineModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIElementsNativeModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIWidgetsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UIWidgetsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UIWidgetsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UNETModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UNETModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UmbraModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityCurlModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VideoModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.VideoModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.VirtualTexturingModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.WindModule">
-      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
-    </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
+      <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.WindModule.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\SharpCompress.dll</HintPath>
@@ -376,6 +376,9 @@
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>

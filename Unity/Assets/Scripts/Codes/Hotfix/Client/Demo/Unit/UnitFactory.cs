@@ -4,7 +4,7 @@ namespace ET.Client
 {
     public static class UnitFactory
     {
-        public static Unit Create(Scene currentScene, UnitInfo unitInfo)
+        public static Unit Create(Scene currentScene, UnitInfo unitInfo, bool isPlayer = false)
         {
 	        UnitComponent unitComponent = currentScene.GetComponent<UnitComponent>();
 	        Unit unit = unitComponent.AddChildWithId<Unit, int>(unitInfo.UnitId, unitInfo.ConfigId);
@@ -31,11 +31,22 @@ namespace ET.Client
 	        }
 
 	        unit.AddComponent<ObjectWait>();
-
 	        unit.AddComponent<XunLuoPathComponent>();
+	        unit.AddComponent<ClientCastComponent>();
+	        unit.AddComponent<ClientBuffComponent>();
 	        
-	        EventSystem.Instance.Publish(unit.DomainScene(), new EventType.AfterUnitCreate() {Unit = unit});
+	        EventSystem.Instance.Publish(unit.DomainScene(), new EventType.AfterUnitCreate() {Unit = unit, isPlayer = isPlayer});
             return unit;
+        }
+
+        public static Unit CreateParticleUnit(Scene currentScene)
+        {
+	        UnitComponent unitComponent = currentScene.GetComponent<UnitComponent>();
+	        Unit unit = unitComponent.AddChild<Unit, int>(10003);
+	        unitComponent.Add(unit);
+
+	        unit.AddComponent<ObjectWait>();
+	        return unit;
         }
     }
 }

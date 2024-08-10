@@ -37,7 +37,7 @@ namespace ET.Client
 		
 		public static void Awake(this AnimatorComponent self)
 		{
-			Animator animator = self.GetParent<Unit>().GetComponent<GameObjectComponent>().GameObject.GetComponent<Animator>();
+			Animator animator = self.GetParent<Unit>().GetComponent<GameObjectComponent>().GameObject.GetComponentInChildren<Animator>();
 
 			if (animator == null)
 			{
@@ -53,6 +53,7 @@ namespace ET.Client
 			{
 				return;
 			}
+			
 			self.Animator = animator;
 			foreach (AnimationClip animationClip in animator.runtimeAnimatorController.animationClips)
 			{
@@ -79,9 +80,8 @@ namespace ET.Client
 			try
 			{
 				self.Animator.SetFloat("MotionSpeed", self.MontionSpeed);
-
 				self.Animator.SetTrigger(self.MotionType.ToString());
-
+				
 				self.MontionSpeed = 1;
 				self.MotionType = MotionType.None;
 			}

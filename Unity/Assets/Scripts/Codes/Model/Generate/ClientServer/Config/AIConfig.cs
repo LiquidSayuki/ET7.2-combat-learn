@@ -85,7 +85,19 @@ namespace ET
 		public string Name { get; set; }
 		/// <summary>节点参数</summary>
 		[ProtoMember(5)]
-		public int[] NodeParams { get; set; }
+		public int[] _NodeParams; 
+		
+		[BsonIgnore]
+		[ProtoIgnore]
+		public int[] NodeParams
+		{
+		get
+			{
+				if(_NodeParams == null)
+					_NodeParams = new int[] {};
+				return _NodeParams;
+			}
+		}
 
 	}
 }

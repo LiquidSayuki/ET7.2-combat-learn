@@ -61,7 +61,7 @@ namespace ET.Server
             // 无自身
             if (self == null || self.IsDisposed)
             {
-                return ErrorCode.ERR_Cast_ArgsError;
+                return ErrorCode.ERR_ArgsError;
             }
 
             // 无释放者
@@ -80,16 +80,26 @@ namespace ET.Server
         {
             Unit caster = self.Caster;
             CastConfig castConfig = self.Config;
-
+            
             int range = 0;
             switch (castConfig.SelectType)
             {
+                case 0: // 选择自己
+                    self.Target.Clear();
+                    self.Target.Add(caster.Id);
+                    break;
                 case 1: // 选择身边一定范围内的一个人
+                    self.Target.Clear();
                     range = int.Parse(castConfig.SelectParam[0]);
-                    foreach (AOIEntity aoiEntity in caster.GetBeSeePlayers().Values)
+                    foreach (AOIEntity aoiEntity in caster.GetBeSeeUnits().Values)
                     {
                         Unit unit = aoiEntity.GetParent<Unit>();
 
+                        if (unit.Type != UnitType.Player && unit.Type != UnitType.Monster)
+                        {
+                            continue;
+                        }
+                        
                         if (unit == caster)
                         {
                             continue;
@@ -102,12 +112,18 @@ namespace ET.Server
                         }
                     }
                     break;
-                case 2:
+                case 2: // 选择身边一定范围内的所有人
+                    self.Target.Clear();
                     range = int.Parse(castConfig.SelectParam[0]);
-                    foreach (AOIEntity aoiEntity in caster.GetBeSeePlayers().Values)
+                    foreach (AOIEntity aoiEntity in caster.GetBeSeeUnits().Values)
                     {
                         Unit unit = aoiEntity.GetParent<Unit>();
-
+                        
+                        if (unit.Type != UnitType.Player && unit.Type != UnitType.Monster)
+                        {
+                            continue;
+                        }
+                        
                         if (unit == caster)
                         {
                             continue;
@@ -118,6 +134,10 @@ namespace ET.Server
                             self.Target.Add(unit.Id);
                         }
                     }                    
+                    break;
+                case 3: // 使用外部传入的目标
+                    // todo: 做一些检测目标是否合法的检测
+                    
                     break;
             }
         }
@@ -138,12 +158,23 @@ namespace ET.Server
             return ErrorCode.ERR_Success;
         }
 
-        public static async ETTask CastBeginAsync(this Cast self)
+        /// <summary>
+        /// Cast启动回调
+        /// </summary>
+        private static async ETTask CastBeginAsync(this Cast self)
         {
+            // 如果技能运行不成功，则需要打断技能
+            bool notBreak = self.Caster.GetComponent<SkillStatusComponent>()?.RunningSkill(self) ?? true;
+            if (!notBreak)
+            {
+                self.Break();
+                return;
+            }
+            
             self.StartTime = TimeHelper.ServerNow();
 
             // 建立技能开始释放的消息
-            M2C_CastStart m2CCastStart = new M2C_CastStart() { CastId = self.Id, CasterId = self.Caster.Id, TargetId = new List<long>() };
+            M2C_CastStart m2CCastStart = new M2C_CastStart() { CastId = self.Id, CastConfigId = self.ConfigId, CasterId = self.Caster.Id, TargetId = new List<long>() };
             m2CCastStart.TargetId.AddRange(self.Target);
             
             // 消息下发与同步
@@ -163,7 +194,7 @@ namespace ET.Server
             // 遍历这个List可以在每一个配置的需要发生技能效果的时间触发对应的技能效果
             foreach (int time in config.Times)
             {
-                casterInstanceId = self.InstanceId;
+                castInstanceId = self.InstanceId;
                 casterInstanceId = self.Caster.InstanceId;
                 
                 // 等待直到下一个要产生技能效果的时间
@@ -212,6 +243,36 @@ namespace ET.Server
         }
 
         /// <summary>
+        /// Cast结束回调
+        /// </summary>
+        private static void CastFinish(this Cast self)
+        {
+            // 如果技能不能正常结束，需要打断技能
+            bool notBreak = self.Caster.GetComponent<SkillStatusComponent>()?.FinishSkill(self) ?? true;
+            if (!notBreak)
+            {
+                self.Break();
+            }
+            
+            // 只有持续时长大于0的技能需要同步状态，顺发技能无需同步结束状态
+            if (self.Config.TotalTime > 0)
+            {
+                M2C_CastFinish m2CCastFinish = new M2C_CastFinish() { CastId = self.InstanceId, CasterId = self.Caster.InstanceId };
+                MMOMessageHelper.SendClient(self.Caster, m2CCastFinish, (NoticeClientType)self.Config.NoticeClientType );
+            }
+
+            if (self.Config.FinishAction.Length > 0)
+            {
+                foreach (var actionsId in self.Config.FinishAction)
+                {
+                    self.CreateActions(actionsId, self.Caster, ActionsRunType.CastFinish);
+                }                
+            }
+            
+            self?.Dispose();
+        }
+        
+        /// <summary>
         /// 检测技能和技能释放者是否变更了状态
         /// </summary>
         public static bool CheckAsyncInvalid(this Cast self, long castInstanceId, long casterInstanceId)
@@ -228,19 +289,7 @@ namespace ET.Server
 
             return true;
         }
-
-        public static void CastFinish(this Cast self)
-        {
-            // 只有持续时长大于0的技能需要同步状态，顺发技能无需同步结束状态
-            if (self.Config.TotalTime > 0)
-            {
-                M2C_CastFinish m2CCastFinish = new M2C_CastFinish() { CastId = self.InstanceId, CasterId = self.Caster.InstanceId };
-                MMOMessageHelper.SendClient(self.Caster, m2CCastFinish, (NoticeClientType)self.Config.NoticeClientType );
-            }
-            
-            self?.Dispose();
-        }
-
+        
         /// <summary>
         /// 技能命中自身的行为
         /// </summary>
@@ -333,6 +382,18 @@ namespace ET.Server
                     }
                 }
             }
+        }
+
+        /// <summary>
+        /// 技能打断回调
+        /// </summary>
+        /// <param name="self"></param>
+        public static void Break(this Cast self)
+        {
+            M2C_CastBreak m2CCastBreak = new M2C_CastBreak() { CasterId = self.Caster.Id, CastId = self.Id };
+            MMOMessageHelper.SendClient(self.Caster, m2CCastBreak, (NoticeClientType)self.Config.NoticeClientType);
+            
+            self.Dispose();
         }
     }
 }

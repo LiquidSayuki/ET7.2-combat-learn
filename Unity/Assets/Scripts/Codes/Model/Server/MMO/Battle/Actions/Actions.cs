@@ -39,5 +39,14 @@ namespace ET.Server
                 return this.parent.GetParent<Buff>();
             }
         }
+
+        [BsonIgnore]
+        public BulletComponent BulletSelf
+        {
+            get
+            {
+                return this.parent.GetParent<BulletComponent>();
+            }
+        }
     }
 }

@@ -13,7 +13,17 @@
         public const int MoveTimer = 201;
         public const int AITimer = 202;
         public const int SessionAcceptTimeout = 203;
+        
         public const int BuffExpireTimer = 204;
         public const int BuffTickTimer = 205;
+
+        public const int BulletTick = 206;
+
+        public const int CreateMonster = 207;
+        public const int MonsterDead = 208;
+
+        public const int BulletTick2 = 209;
+        public const int BulletTick3 = 210;
+        public const int BulletTotalTime = 211;
     }
 }

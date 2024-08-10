@@ -1,5 +1,5 @@
 ﻿using System;
-using ET.Event;
+using ET.EventType;
 
 namespace ET.Server
 {

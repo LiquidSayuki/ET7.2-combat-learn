@@ -11,17 +11,15 @@
         }
 
         /// <summary>
-        /// 技能命中创建的Action
+        /// 由技能Cast创建的Action
         /// </summary>
-        /// <param name="configId"> 行为效果的Id </param>
-        /// <param name="owner"> 行为效果的目标 </param>
-        /// <param name="actionsRunType"></param>
-        /// <param name="autoRun"></param>
-        /// <param name="autoDispose"></param>
-        /// <returns></returns>
         public static Actions CreateActions(this Cast self, int configId, Unit owner, ActionsRunType actionsRunType, bool autoRun = true, bool autoDispose = true)
         {
             Actions actions = self.GetComponent<ActionsTempComponent>().CreateActions(configId);
+            
+            // 在Cast创建的Action中
+            // Caster是Cast的Caster
+            // Owner是Action命中的目标，有时是技能目标，有时也可以是自身
             actions.Caster = self.Caster;
             actions.Owner = owner;
 
@@ -36,7 +34,7 @@
         }
 
         /// <summary>
-        /// Buff运算创建的Action
+        /// 由Buff运算创建的Action
         /// </summary>
         public static Actions CreateActions(this Buff self, int configId, ActionsRunType actionsRunType, bool autoRun = true, bool autoDispose = true)
         {
@@ -53,7 +51,31 @@
             return actions;
         }
 
-        public static void RunActions(Actions actions, ActionsRunType actionsRunType, bool autoRun = true, bool autoDispose = true)
+        /// <summary>
+        /// Bullet创建出的Action
+        /// </summary>
+        public static Actions CreateActions(this BulletComponent self, int configId, Unit owner ,Unit caster, ActionsRunType actionsRunType, bool autoRun = true, bool autoDispose = true)
+        {
+            Actions actions = self.GetComponent<ActionsTempComponent>().CreateActions(configId);
+            
+            // Bullet创建Action比较复杂
+            // Bullet Awake时caster和owner都是Bullet的Caster的Unit
+            // Bullet Tick时caster和owner都是Bullet自身的Unit
+            // Bullet Destroy时的caster和owner都是Bullet自身的Unit
+            actions.Owner = owner;
+            actions.Caster = caster;
+            
+            RunActions(actions, actionsRunType, autoRun, autoDispose);
+            
+            if (actions.IsDisposed)
+            {
+                return null;
+            }
+
+            return actions;
+        }
+
+        private static void RunActions(Actions actions, ActionsRunType actionsRunType, bool autoRun = true, bool autoDispose = true)
         {
             if (autoRun)
             {
@@ -61,17 +83,17 @@
                 {
                     using (actions)
                     {
-                        RunActions(actions, actionsRunType);
+                        RunActionsInner(actions, actionsRunType);
                     }
                 }
                 else
                 {
-                    RunActions(actions, actionsRunType);
+                    RunActionsInner(actions, actionsRunType);
                 }
             }
         }
 
-        public static void RunActions(Actions actions, ActionsRunType actionsRunType)
+        private static void RunActionsInner(Actions actions, ActionsRunType actionsRunType)
         {
             IActions actionsHandle = ActionsDispatcherComponent.Instance.Get(actions.Config.Type);
 

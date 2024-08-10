@@ -43,62 +43,28 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Template\FileRegionReplace.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\LDasm.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\HashUtil.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2022OrNewer.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\IAssemblyResolver.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\ParamInfo.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\MsvcStdextWorkaround.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\Il2CppDefGeneratorCommand.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HookPool.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\AOT\Analyzer.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HybridCLRHooks\PatchScriptingAssembliesJsonHook.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\BashUtil.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\TypeInfo.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\CompileDllCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\ReversePInvokeWrapperGeneratorCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HookUtils_OSX.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\ABIUtil.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\AOT\GenericReferenceWriter.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\SettingsUtil.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\StripAOTDllCommand.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\ScriptingAssembliesJsonPatcher.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Il2CppDef\Il2CppDefGenerator.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\MethodBridge\Analyzer.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyResolverBase.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyCache.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2021OrOlder.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Link\LinkXmlWriter.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyReferenceDeepCollector.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\PlatformABI.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\SettingsPresetReceiver.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\MetaUtil.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\MenuProvider.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\MethodBridgeGeneratorCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\MethodDesc.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\MethodBridge\Generator.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Link\Analyzer.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\LinkGeneratorCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\InstallerController.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyCacheBase.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HybridCLRHooks\CopyStrippedAOTAssembliesHook.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\InstallerWindow.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\ValueTypeSizeAligmentCalculator.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\MethodHook.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\ParamOrReturnType.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HookUtils.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\PrebuildCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\GenericArgumentContext.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\HybridCLRSettings.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\HybridCLRSettingProvider.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\CopyStrippedAOTAssemblies.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\PathAssemblyResolver.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\FixedSetAssemblyResolver.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\AOTReferenceGeneratorCommand.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\EditorStatusWatcher.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\FilterHotFixAssemblies.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\CheckSettings.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\CombinedAssemblyResolver.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\AOT\ConstraintContext.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\PatchScriptingAssemblyList.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\GenericClass.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\CodePatcher.cs" />
@@ -107,8 +73,42 @@
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\MethodReferenceAnalyzer.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\GenericMethod.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\ScriptableSignleton.cs" />
-    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ReversePInvokeWrap\Generator.cs" />
     <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ReversePInvokeWrap\Analyzer.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\HashUtil.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\IAssemblyResolver.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\MsvcStdextWorkaround.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\AOT\Analyzer.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HybridCLRHooks\PatchScriptingAssembliesJsonHook.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\BashUtil.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\CompileDllCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\ReversePInvokeWrapperGeneratorCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\3rds\UnityHook\HookUtils_OSX.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\SettingsUtil.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\StripAOTDllCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyResolverBase.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyCache.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\AddLil2cppSourceCodeToXcodeproj2021OrOlder.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Link\LinkXmlWriter.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyReferenceDeepCollector.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\PlatformABI.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\MetaUtil.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\MethodBridgeGeneratorCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\MethodDesc.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Link\Analyzer.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\LinkGeneratorCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\InstallerController.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\AssemblyCacheBase.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Installer\InstallerWindow.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ABI\ValueTypeSizeAligmentCalculator.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Commands\PrebuildCommand.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\GenericArgumentContext.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\PathAssemblyResolver.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Settings\EditorStatusWatcher.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\FilterHotFixAssemblies.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\BuildProcessors\CheckSettings.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\Meta\CombinedAssemblyResolver.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\AOT\ConstraintContext.cs" />
+    <Compile Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\ReversePInvokeWrap\Generator.cs" />
     <None Include="Library\PackageCache\com.code-philosophy.hybridclr@f810ede6d7\Editor\HybridCLR.Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
@@ -377,17 +377,14 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="MongoDB.Bson">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.CompilerServices.Unsafe">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Text.Encoding.CodePages">
-      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
-    </Reference>
     <Reference Include="MongoDB.Libmongocrypt">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Libmongocrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.CodePages">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\System.Text.Encoding.CodePages.dll</HintPath>
     </Reference>
     <Reference Include="SharpCompress">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\SharpCompress.dll</HintPath>
@@ -412,6 +409,9 @@
     </Reference>
     <Reference Include="MongoDB.Driver.Core">
       <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Driver.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>F:\Unity\ET\Unity\Assets\Plugins\MongoDB\MongoDB.Bson.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>F:\Unity\ET\Unity\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
