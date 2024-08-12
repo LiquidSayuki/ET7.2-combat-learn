@@ -42,10 +42,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\CFXR_ShaderImporter.cs" />
-    <Compile Include="Assets\Editor\CFXR_ExpressionParser.cs" />
     <Compile Include="Assets\Editor\CFXR_Styles.cs" />
     <Compile Include="Assets\Editor\CFXR_MaterialInspector.cs" />
     <Compile Include="Assets\Editor\CFXR_ShaderPostProcessor.cs" />
+    <Compile Include="Assets\Editor\CFXR_ExpressionParser.cs" />
     <None Include="Assets\Editor\CFXR Editor.asmdef" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>

@@ -281,8 +281,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Input\Texture\TextureStackNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Math\Range\ClampNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Interfaces\GenerationMode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Input\Scene\EyeIndexNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Drawing\Inspector\PropertyDrawers\Vector3PropertyDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Input\Scene\EyeIndexNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Drawing\Inspector\PropertyDrawers\Vector4PropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Importers\ShaderGraphImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Artistic\Normal\NormalBlendNode.cs" />
@@ -606,9 +606,9 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Attributes\NeverAllowedByTargetAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Legacy\SlotReference0.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Graphs\Vector1MaterialSlot.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Drawing\ViewModels\InspectorViewModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Generation\Descriptors\PragmaDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Nodes\Input\Texture\SampleRawCubemapNode.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Drawing\ViewModels\InspectorViewModel.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Legacy\SpriteUnlitMasterNode1.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\ShaderGraphProjectSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@12.1.11\Editor\Data\Interfaces\PositionSource.cs" />

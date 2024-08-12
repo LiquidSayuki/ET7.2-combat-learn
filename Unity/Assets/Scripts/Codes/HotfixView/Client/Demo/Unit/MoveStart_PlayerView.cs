@@ -13,7 +13,7 @@ namespace ET.Client
                 return;
             }
             
-            unit.GetComponent<AnimatorComponent>().SetFloatValue("Speed", 1f);
+            unit.GetComponent<AnimatorComponent>()?.SetFloatValue("Speed", 5f);
             
             await ETTask.CompletedTask;
         }

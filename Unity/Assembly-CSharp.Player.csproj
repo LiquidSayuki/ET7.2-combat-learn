@@ -41,26 +41,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILogin\UILoginComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\LayerNames.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Unit\AnimatorComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILoading\UILoadingComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UILobby\UILobbyComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Global\GlobalComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\UI\UIHelp\UIHelpComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Unit\GameObjectComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Plugins\Example\ModelView.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Config\ConfigLoader.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\Resource\ResourcesComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Camera\CameraComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\Resource\ResourcesLoaderComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UI.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIEventAttribute.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Demo\Opera\OperaComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIType.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\UIEventComponent.cs" />
-    <Compile Include="Assets\Scripts\Codes\ModelView\Client\Module\UI\AUIEvent.cs" />
+    <Compile Include="Assets\Res\FantasyEnvironments\Environments\Town\Scripts\Door.cs" />
+    <Compile Include="Assets\Scripts\AnimatorTest.cs" />
     <Reference Include="UnityEngine">
       <HintPath>F:\Unity\2021.3.26f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\il2cpp\Managed\UnityEngine.dll</HintPath>
     </Reference>
@@ -702,6 +684,10 @@
       <Project>{500ad7e6-b18d-dff0-dcfc-7f5faabf2978}</Project>
       <Name>Unity.Mathematics.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Cinemachine.Player.csproj">
+      <Project>{ea02a03d-211d-20de-ec31-24d2881fdcbe}</Project>
+      <Name>Cinemachine.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
       <Project>{08122e21-1203-a254-ce7b-5af4cad3fa58}</Project>
       <Name>Unity.Burst.Player</Name>
@@ -722,17 +708,13 @@
       <Project>{2378bf39-b006-a14c-a2e0-2e448230be55}</Project>
       <Name>Unity.Core.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ThirdParty.Player.csproj">
-      <Project>{4610df10-c19b-9ab9-e23c-2644b8b0ab8a}</Project>
-      <Name>Unity.ThirdParty.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{ea02a03d-211d-20de-ec31-24d2881fdcbe}</Project>
-      <Name>Cinemachine.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="CFXRRuntime.Player.csproj">
       <Project>{d18a8944-d8a4-5cea-6bb6-62d3ba8087b1}</Project>
       <Name>CFXRRuntime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ThirdParty.Player.csproj">
+      <Project>{4610df10-c19b-9ab9-e23c-2644b8b0ab8a}</Project>
+      <Name>Unity.ThirdParty.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

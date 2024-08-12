@@ -120,8 +120,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\ShaderGUI\ShadingModels\LitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\2D\ShapeEditor\Shapes\IShape.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\2D\ShapeEditor\EditablePath\MultipleEditablePathController.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\ShaderGraph\Targets\UniversalDecalSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Decal\CreateDecalProjector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\ShaderGraph\Targets\UniversalDecalSubTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\SavedParameter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\Overrides\BloomEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@12.1.11\Editor\2D\Renderer2DAnalytics.cs" />

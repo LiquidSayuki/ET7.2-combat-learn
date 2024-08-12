@@ -9,6 +9,7 @@ namespace ET.Client
 		Idle = 1,
 		Run = 2,
 		Attack = 3,
+		Damage = 4,
 	}
 
 	[ComponentOf(typeof(Unit))]
